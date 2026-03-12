@@ -36,7 +36,6 @@ class SWRequester(APIRequester):  # SWRequester наследуется от APIR
 
     # Метод для получения информации по конкретной категории.
     def get_sw_info(self, sw_type):
-        # Составляем путь к нужной категории, например 'people/'.
         # Отправляем запрос через родительский метод get().
         response = self.get(sw_type + '/')
         if response:
